@@ -14,7 +14,7 @@ local defaults = {
         frequency_penalty = 0.3,
         max_tokens = 2048,
         context_lines = 16, -- Surrounding lines for swift completion
-        api_key = '...', -- Add your Open API secret key on setup (DO NOT COMMIT)
+        api_key = os.getenv("OPENAI_API_KEY"),
     },
     -- Visual settings
     ui = {
